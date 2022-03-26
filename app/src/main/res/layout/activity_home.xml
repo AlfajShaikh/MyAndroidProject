@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/purple_200">
+
+    <TextView
+        android:layout_width="50mm"
+        android:layout_height="match_parent"
+        android:text="Hello Alfaj Welcome To the World of Pets"
+        android:paddingRight="30.20dp"
+        android:paddingStart="12dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginRight="53dp"
+        android:paddingVertical="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/SettingButton"
+        android:onClick="Visiable"
+
+        android:src="@drawable/ic_baseline_settings_24"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70mm"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pune"
+        android:padding="16dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:paddingEnd="12dp"
+        android:id="@+id/Location"
+        android:onClick="CityList"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="9.5dp"
+            android:background="@drawable/otpbutton"
+            android:text="Community Box"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="15dp"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_baseline_search_24"/>
+    <EditText
+        android:layout_width="33mm"
+        android:layout_height="match_parent"
+        android:hint="Type Keyword"
+        android:textSize="16dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/searchbox"/>
+        <EditText
+            android:layout_width="20mm"
+            android:layout_height="match_parent"
+            android:background="@drawable/searchbox"
+            android:layout_marginHorizontal="1dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="15dp"
+            android:hint="Pin Code"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="30dp">
+
+
+    <TableRow
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="7dp"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="6dp"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_baseline_drag_indicator_24"
+                android:text="Categories"></TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:layout_column="1"
+                android:drawableLeft="@drawable/ic_baseline_local_hospital_24"
+                android:text="Health"></TextView>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="7dp"
+               android:gravity="left"
+                android:clickable="true"
+                android:layout_column="0"
+                android:textSize="18dp"
+                android:onClick="petShop"
+                android:id="@+id/petshop"
+                android:layout_marginLeft="14dp"
+                android:text="Pet Shop"></TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:textSize="18dp"
+                android:gravity="left"
+                android:layout_column="1"
+                android:text="Pharmacies"></TextView>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="7dp"
+                android:gravity="left"
+                android:layout_column="0"
+                android:textSize="18dp"
+                android:layout_marginLeft="14dp"
+                android:text="Hostels"></TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:textSize="18dp"
+                android:gravity="left"
+                android:layout_column="1"
+                android:text="vets"></TextView>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="7dp"
+                android:gravity="left"
+                android:layout_column="0"
+                android:textSize="18dp"
+                android:layout_marginLeft="14dp"
+                android:text="Salons"></TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:textSize="18dp"
+                android:gravity="left"
+                android:layout_column="1"
+                android:text="Vets (Online)"></TextView>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="7dp"
+                android:gravity="left"
+                android:layout_column="0"
+                android:textSize="18dp"
+                android:layout_marginLeft="14dp"
+                android:text="Trainers"></TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:textSize="18dp"
+                android:gravity="left"
+                android:layout_column="1"
+                android:text="General Consutation"></TextView>
+
+        </TableRow>
+        <TableRow>
+
+        </TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:gravity="left"
+            android:layout_column="0"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp"
+            android:text="Others"></TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:gravity="left"
+            android:layout_column="0"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:text="Blog"></TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:gravity="left"
+            android:layout_column="0"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:text="Photographers"></TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:gravity="left"
+            android:layout_column="0"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:text="Pet Party Planners"></TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:gravity="left"
+            android:layout_column="0"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:text="Pet PlayGrounds"></TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:gravity="left"
+            android:layout_column="0"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:text="Pet NGOs"></TextView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="7dp"
+            android:gravity="left"
+            android:layout_column="0"
+            android:textSize="18dp"
+            android:layout_marginLeft="14dp"
+            android:text="Pet Friendly Places(Hotels,cafe,taxi)"></TextView>
+    </TableLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

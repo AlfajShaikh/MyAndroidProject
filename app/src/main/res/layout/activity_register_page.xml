@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="2.0dp"
+    tools:context=".RegisterPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_baseline_supervisor_account_24"
+        android:layout_gravity="center"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Personal Details"
+                android:id="@+id/personaldetails"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:onClick="Personaldetail"
+                android:layout_margin="25dp"/>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="58mm"
+        android:drawablePadding="13dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:height="45dp"
+
+        android:background="@drawable/editboxdesigning"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+        android:hint="  Enter name" />
+
+    <EditText
+        android:layout_width="58mm"
+        android:layout_height="wrap_content"
+        android:hint="  Enter DOB (dd/MM/YYYY)"
+        android:drawablePadding="13dp"
+        android:focusable="false"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/editboxdesigning"
+        android:height="45dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:id="@+id/BirtDate"
+        ></EditText>
+    <EditText
+        android:layout_width="58mm"
+        android:layout_margin="10dp"
+        android:drawablePadding="13dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+
+        android:background="@drawable/editboxdesigning"
+        android:height="45dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:id="@+id/PhoneNumber"
+        android:hint="  Enter Mobile Number"></EditText>
+    <EditText
+        android:layout_width="58mm"
+        android:layout_height="wrap_content"
+        android:hint="  Enter Email"
+        android:background="@drawable/editboxdesigning"
+        android:height="45dp"
+        android:drawablePadding="13dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:id="@+id/Registeremail"
+        ></EditText>
+            <EditText
+                android:layout_width="58mm"
+                android:layout_margin="10dp"
+                android:background="@drawable/editboxdesigning"
+                android:height="45dp"
+                android:layout_height="wrap_content"
+                android:hint="  Profession"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                android:id="@+id/Profession"
+                ></EditText>
+    <EditText
+        android:layout_width="58mm"
+        android:layout_margin="10dp"
+        android:background="@drawable/editboxdesigning"
+        android:height="45dp"
+        android:drawablePadding="13dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_height="wrap_content"
+        android:hint="  Enter password"
+        android:password="true"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:id="@+id/Registerpassword"
+        ></EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Address Details"
+                android:id="@+id/addressdetails"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:onClick="AddressDetails"
+                android:layout_margin="25dp"/>
+    <EditText
+        android:layout_width="58mm"
+        android:layout_margin="10dp"
+        android:background="@drawable/editboxdesigning"
+        android:height="45dp"
+        android:layout_height="wrap_content"
+        android:hint="  Flat/Street"
+        android:drawablePadding="13dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        android:id="@+id/FlatStreet"
+        ></EditText>
+    <EditText
+        android:layout_width="58mm"
+        android:layout_margin="10dp"
+        android:background="@drawable/editboxdesigning"
+        android:height="45dp"
+        android:layout_height="wrap_content"
+        android:hint="  Area"
+        android:drawablePadding="13dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_corporate_fare_24"
+        android:id="@+id/Area"
+        ></EditText>
+            <EditText
+                android:layout_width="58mm"
+                android:layout_margin="10dp"
+                android:background="@drawable/editboxdesigning"
+                android:height="45dp"
+                android:layout_height="wrap_content"
+                android:hint="  City"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                android:id="@+id/City"
+                ></EditText>
+            <EditText
+                android:layout_width="58mm"
+                android:layout_margin="10dp"
+                android:background="@drawable/editboxdesigning"
+                android:height="45dp"
+                android:layout_height="wrap_content"
+                android:hint="  State"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_corporate_fare_24"
+                android:id="@+id/State"
+                ></EditText>
+            <EditText
+                android:layout_width="58mm"
+                android:layout_margin="10dp"
+                android:background="@drawable/editboxdesigning"
+                android:height="45dp"
+                android:text="India"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:hint="  Country"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_corporate_fare_24"
+                android:id="@+id/Country"
+                ></EditText>
+            <EditText
+                android:layout_width="58mm"
+                android:layout_margin="10dp"
+                android:background="@drawable/editboxdesigning"
+                android:height="45dp"
+                android:layout_height="wrap_content"
+                android:hint="  Pin Code"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_fiber_pin_24"
+                android:id="@+id/Pin_Code"
+                ></EditText>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="11dp"
+                android:layout_gravity="left"
+                android:id="@+id/radiobutton"
+                android:onClick="checkPet"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="Do you have pet ?"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Pet Details"
+                android:id="@+id/petdetails"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:onClick="PetDetails"
+                android:layout_margin="25dp"/>
+    <Spinner
+        android:layout_width="58mm"
+        android:layout_height="wrap_content"
+        android:id="@+id/Spinner"
+        android:layout_margin="10dp"
+
+        android:layout_gravity="center"
+        android:spinnerMode="dropdown"></Spinner>
+
+            <EditText
+                android:layout_width="58mm"
+                android:layout_margin="10dp"
+                android:background="@drawable/editboxdesigning"
+                android:height="45dp"
+                android:layout_height="wrap_content"
+                android:hint="  Name of pet"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_pets_24"
+                android:id="@+id/PetName"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+
+                ></EditText>
+            <EditText
+                android:layout_width="58mm"
+                android:layout_margin="10dp"
+                android:background="@drawable/editboxdesigning"
+                android:height="45dp"
+                android:layout_height="wrap_content"
+                android:hint="  Breed"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_pets_24"
+                android:id="@+id/Breed"
+                android:drawablePadding="13dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                ></EditText>
+
+    <Button
+        android:layout_width="20mm"
+        android:layout_height="wrap_content"
+        android:id="@+id/Registration"
+        android:layout_gravity="center"
+        android:onClick="Registration"
+android:layout_margin="10dp"
+        android:text="Register"></Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CompanyProject</string>
+    <string-array name="Type">
+        <item>Select Pet Type</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Other</item>
+
+
+    </string-array>
+    <string-array name="UserType">
+        <item>Retailer</item>
+        <item>Customer</item>
+    </string-array>
+
+    <string-array name="City_name">
+        <item>My Profile</item>
+        <item>My Pet</item>
+        <item>Contact us</item>
+    </string-array>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="25dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="60dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+            <EditText
+                android:id="@+id/UserName"
+                android:layout_width="55mm"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+
+
+                android:height="45dp"
+                android:background="@drawable/editboxdesigning"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="13dp"
+                android:hint="Enter Email/Mobile Number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"></EditText>
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="55mm"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:height="45dp"
+                android:background="@drawable/editboxdesigning"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="13dp"
+                android:hint="Enter password"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:password="true"></EditText>
+
+
+            <EditText
+                android:id="@+id/MobileNumber"
+                android:layout_width="55mm"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:height="45dp"
+                android:background="@drawable/editboxdesigning"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="13dp"
+                android:hint="Enter Mobile Number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:password="true"></EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/OTP"
+                    android:layout_width="38mm"
+                    android:layout_height="wrap_content"
+                    android:height="45dp"
+                    android:background="@drawable/editboxdesigning"
+                    android:drawableLeft="@drawable/ic_baseline_smartphone_24"
+                    android:drawablePadding="13dp"
+                    android:hint="OTP"
+                    android:paddingStart="12dp"
+
+
+                    android:paddingEnd="12dp"
+                    android:password="true" />
+
+                <Button
+                    android:id="@+id/getotp"
+                    android:layout_width="19mm"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/otpbutton"
+
+                    android:text="GET OTP"
+
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:checked="true"
+                    android:onClick="MemberButton"
+                    android:text="Member"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/Guest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="GuestButton"
+                    android:text="Guest"
+                    android:textSize="17dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/memberLogin"
+                android:layout_width="23mm"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:onClick="LoginPage"
+                android:text="Submit" />
+
+
+            <TextView
+                android:id="@+id/CreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="9dp"
+                android:onClick="createAccountPage"
+                android:text="REGISTER ?"
+                android:textColor="#FF3700B3"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
